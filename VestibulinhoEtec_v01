@@ -1,0 +1,27 @@
+// UML Diagrama de Classes 
+// Objeto de Estudo: Vestibulinho Etec
+// Versao01 incompleta
+// ------------------
+
+
+// Adicionar comentários
+[Inscricao]-[note: Agregando dados Pessoa com Escola/Curso{bg:wheat}]
+[Pessoa]-[note: Dados pessoais que serão utilizados para efetivação de inscrição no processo seletivo{bg:wheat}]
+[Candidatos]-[note:Dados do candidato x curso, sem confirmação inscrição{bg:wheat}]
+
+// Definição de Classes
+[≪interface≫;Pessoa|@-CodigoPes:integer;+NomePes: string;+CursoPes: string;+PeriodoPes: string;+DadosPes: memo;-ValidaPes: boolean|+Pesquisar_1curso(UE-Escola,CursoCan,PeriodoCan);+Pesquisar_2curso(UEscola,CursoCan,PeriodoCan)]
+
+// Relacionamentos 
+[Pessoa]<>-efetua*>[Inscricao]++-0..*>[Candidatos]
+[Inscricao]++-*>[Inscritos]
+
+[UEscolar]<-pesquisa*>[Inscricao]
+[Cursos]<-pesquisa*>[Inscricao]
+[UEscolar]<-contem*<>[Cursos]
+
+[≪Modulo≫;Inscricao|@+CodigoIns: integer;+CodigoCan:integer;+CodigoCur:integer;+CodigoPer:char|Escolha_1curso(UEscolar,CursoCan,PeriodoCan);+Escolha_2curso(UEscola,CursoCan,PeriodoCan);+ConfirmarInscricao(Escolha_1curso, Escolha_2curso)]
+
+// Author: @profluizangelo
+// Date 06/08/2020
+// site https://yuml.me/diagram/scruffy/class/draw
