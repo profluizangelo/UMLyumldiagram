@@ -1,0 +1,17 @@
+// Exemplo de Diagrama de Classes
+// ------------------
+
+// Elementos principais de relacionamento
+[Estoque]<>-ordem*>[Consulta]++-0..*>[Item]
+[Consulta]++-0..*>[Ordem]
+
+// Notas e comentários adicionais
+[Ordem]-[note: Agregar por categorias{bg:yellow}]
+
+
+// Adicionar comentários e detalhamento do Objeto
+[≪Produto≫;Gerenciamento|+NomeProd: string;+CategProd: string;-QtdProd: string|login(usuário,senha); Cadastrar Produto (CodProd, QtdProd); Consultar Produto(CodProd, NomeProd); Ordenar Produto (CategProd); Alterar Produto (NomeProd, CategProf, QtdProd); Excluir Produto (CodProd)]-[Estoque]
+
+// Author: @profluizangelo
+// Date 11/25/2021
+// site https://yuml.me/diagram/scruffy/class/draw
