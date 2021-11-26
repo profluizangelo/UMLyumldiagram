@@ -7,7 +7,7 @@
 
 // Notas e comentários adicionais
 [Ordem]-[note: Agregar por categorias{bg:yellow}]
-
+[Item]-[note: Classificar por produtos{bg:yellow}]
 
 // Adicionar comentários e detalhamento do Objeto
 [≪Produto≫;Gerenciamento|+NomeProd: string;+CategProd: string;-QtdProd: string|login(usuário,senha); Cadastrar Produto (CodProd, QtdProd); Consultar Produto(CodProd, NomeProd); Ordenar Produto (CategProd); Alterar Produto (NomeProd, CategProf, QtdProd); Excluir Produto (CodProd)]-[Estoque]
