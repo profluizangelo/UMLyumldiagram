@@ -2,7 +2,7 @@
 
 //Entidade Aluno e relacionamentos
 [Aluno]0..1<-[Pessoa]
-[Aluno]<>1-pertence 0..*>[Classe]
+[Aluno]<>1-pertence 1..*>[Classe]
 [Classe]++*-*>[Curso]
 [Classe]-1>[Eixo]
 [Classe]*-*>[Professor]
