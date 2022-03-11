@@ -1,0 +1,28 @@
+[note: Em construção! Diagrama E.R. sistema acadêmico!{bg:wheat}]
+
+//Entidade Aluno e relacionamentos
+[Aluno]0..1<-[Pessoa]
+[Aluno]<>1-pertence 0..*>[Classe]
+[Classe]++*-*>[Curso]
+[Classe]-1>[Eixo]
+[Classe]*-*>[Professor]
+[Disciplina]<->[Professor]
+[Eixo]^[Tecnologia]
+[Eixo]^[Comunicação]
+
+//Entidade Pessoa
+[Pessoa|#codpessoa
++Nome_Completo
++Sobrenome
++senha
+-Salt|
++Login(user,pass)
++Logout()
++Gerenciar_Pessoa()]
+
+//Entidade Aluno
+[Aluno|#codaluno
+-RM
+@codclasse
+@codcurso|
++Gerenciar_Aluno()]
