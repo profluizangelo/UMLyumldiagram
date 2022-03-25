@@ -1,5 +1,5 @@
 // Exemplo de Diagrama de Classes
-// ------------------
+// ------------------------------
 
 // Elementos principais de relacionamento
 [Estoque]*<>-ordem*>[Consulta]1++-0..*>[Item]
