@@ -1,0 +1,15 @@
+// Diagrama ER - Entidade Relacionamento
+// -------------------------------------
+
+// Detalhando entidades e relacionamentos
+[Departamento]++*-possuir*>[Curso]++*-1..pertencer*>[Professor]
+
+[Coordenador]<>1-coordenar 1>[Curso]
+[Coordenador]<>1-1>[Professor]
+[Curso]<>1-possuir *>[Disciplina]
+
+[Professor]++*-ministrar*>[Disciplina]
+
+// Author: Prof. Luiz Angelo
+// http://about.me/profluizangelo
+// create from: https://yuml.me/
