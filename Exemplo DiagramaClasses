@@ -15,8 +15,8 @@
 
 
 // Adicionar comentários e detalhamento do Objeto
-[≪Produto≫;Gerenciamento|+NomeProd: string;+CategProd: string;-QtdProd: string| login(usuário,senha); Cadastrar Produto (CodProd,QtdProd); Consultar Produto(CodProd,
-NomeProd); Ordenar Produto (CategProd); Alterar Produto (NomeProd); CategProf, QtdProd); Excluir Produto (CodProd)]-[Estoque]
+[≪Estoquista≫;Gerenciamento|+NomeProd: string;+CategProd: string;-QtdProd: string| login(usuário,senha); Cadastrar Produto (CodProd,QtdProd); Consultar Produto(CodProd,
+NomeProd); Ordenar Produto (CategProd); Alterar Produto (NomeProd, CategProd, QtdProd); Excluir Produto (CodProd)]-[Estoque]
 
 // Author: @profluizangelo
 // Date 11/25/2021. Update 04/04/2022
