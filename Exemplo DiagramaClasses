@@ -7,7 +7,7 @@
 // [Produto]1..*<>[Estoque]++*..*<>[Produto]
 
 //Descrevendo relacionamento entre Aluno e Pessoa
-[Pessoa]<>-codpessoa*>[Aluno]++-0..*>[Aluno|*codaluno*;_nome_aluno_;RM|Gerenciar_Aluno()]->[Ordem {bg:orange}]
+[Pessoa]<>-codpessoa*>[Cliente]++-0..*>[Cliente|*codcliente*;_nome_cliente_;regcliente|Gerenciar_Cliente()]->[Ordem {bg:orange}]
 
 // Notas e comentários adicionais
 [Ordem {bg:orange}]-[note: Agregar por categorias{bg:yellow}]
@@ -19,5 +19,5 @@
 NomeProd); Ordenar Produto (CategProd); Alterar Produto (NomeProd); CategProf, QtdProd); Excluir Produto (CodProd)]-[Estoque]
 
 // Author: @profluizangelo
-// Date 11/25/2021. Update 04/04/2022
+// Date 11/25/2021. Update 03/11/2022
 // site https://yuml.me
